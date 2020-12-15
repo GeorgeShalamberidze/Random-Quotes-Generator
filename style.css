@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #B1B4AC;
+    font-family: 'Pacifico', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: background-color 2s ease;
+    text-align: center;
+}
+
+#quote-box{
+    background-color: rgb(190, 231, 163);
+    border-radius: 10px;
+    width: 700px;
+    display: table;
+    height: 300px;
+    padding: 40px;
+    max-width: 900px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Quote Element */
+#text{
+    display: inline-block;
+    font-size: 11px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Author Element */
+#author{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 100;
+    height: auto;
+    font-size: 15px;
+    margin: 20px auto;
+}
+
+/* button */
+#new-quote .button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 5px;
+    position: absolute;
+    top: 75%;
+    outline: none;
+    border: none;
+    left: 65%;
+    padding: 5px 15px;
+    margin: 0 40px;
+}
+
+/* button Hover Effect */
+#new-quote .button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.05)
+}
+
+/* Twitter/Tubmlr Effect */
+.twitter a,
+.tumblr a{
+    color: black;
+    margin: 10px;
+}
+
+/* Twitter/Tumblr Icon Styling */
+.tweet-quote{
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    top: 75%;
+    margin: -5px 20px;
+}
+
+/* Twitter/Tumblr Icon Hover Effect */
+.twitter a:hover,
+.tumblr a:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+/* Footer Styling (George Shalamberidze) */
+.footer a{
+    font-family: 'Verdana', Tahoma, Geneva,   Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px auto;
+    display: block;
+    width: 700px;
+}
+
+@media (max-width: 700px){
+    #quote-box{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 510px){
+    #new-quote .button,
+    #new-quote .button:hover{
+        top: 0;
+        left: 0;
+        transform: translateX(-40px);
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .tweet-quote{
+        top: -12%;
+        left: 50%;
+        transform: translateX(-65%);
+    }
+  
+  .footer a{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 390px){
+  .footer a{
+    margin-top: 120px;
+  }
+}
